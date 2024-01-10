@@ -63,7 +63,7 @@ export class DrinksComponent {
     //frappes
     {
       title:'Frappe',
-      color:'F9F6EE',
+      color:'#F9F6EE',
       drinks:[
         {
           drink:'Frappe de caramelate',
@@ -78,7 +78,7 @@ export class DrinksComponent {
     //smoothies
     {
       title:'Smoothies',
-      color:'FFFAFA',
+      color:'#f9fafa',
       drinks:[
         {
           drink:'Smoothie  verde',

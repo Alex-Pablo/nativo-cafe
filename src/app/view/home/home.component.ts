@@ -36,7 +36,6 @@ export class HomeComponent {
 
   generarGradoPolygon(grados: number): void {
     this.coffeeInCup= `polygon(0% ${ grados >= 0 ? (50+(grados*3)):(50- (grados*-6))}%, 100% ${ grados <= 0 ? (50+(grados*-3)): ( 50-(grados*6))}%, 100% 100%, 0% 100%) !important`;
-    console.log(this.coffeeInCup);
   }
 
 }

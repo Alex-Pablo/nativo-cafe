@@ -5,21 +5,25 @@ main {display: block;}
 @font-face{
   font-family: 'PopinsExtraBold';
   src: url('./assets/font/Poppins-ExtraBold.ttf');
+  font-display: swap;
 }
 
 @font-face{
   font-family: 'PopinsBold';
   src: url('./assets/font/Poppins-Bold.ttf');
+  font-display: swap;
 }
 
 @font-face{
   font-family: 'PopinsMedium';
   src: url('./assets/font/Poppins-Medium.ttf');
+  font-display: swap;
 }
 
 @font-face{
   font-family: 'PopinsRegular';
   src: url('./assets/font/Poppins-Regular.ttf');
+  font-display: swap;
 }
 
 
