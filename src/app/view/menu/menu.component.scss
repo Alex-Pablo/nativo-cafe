@@ -1,0 +1,28 @@
+.wrapper {
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100svw;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+
+  .img-branch {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 130%;
+    top: -60px;
+    left: -100px;
+    opacity: 0.02;
+    z-index: 1;
+    touch-action: none;
+  }
+  .menu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    .title {
+      font-size: 1rem;
+      font-weight: 800;
+    }
+  }
+}

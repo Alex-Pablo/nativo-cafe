@@ -1,1 +1,9 @@
-<p>drinks works!</p>
+<div class="wrapper-drink" *ngFor="let drinkCategory of drinks">
+  <p class="title">{{ drinkCategory.title }}</p>
+  <div class="wrapper-drinks" [style.background-color]="drinkCategory.color">
+    <div class="drink" *ngFor="let drink of drinkCategory.drinks">
+      <p>{{ drink.drink }}</p>
+      <p>Q{{ drink.price }}</p>
+    </div>
+  </div>
+</div>

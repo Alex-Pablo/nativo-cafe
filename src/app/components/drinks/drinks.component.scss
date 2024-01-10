@@ -1,0 +1,24 @@
+.wrapper-drink {
+  margin-top: 40px;
+  .title {
+    font-size: 1.2rem;
+    color: #221e1e;
+    font-weight: 700;
+    margin: 0 0 0 10px;
+  }
+  .wrapper-drinks {
+    border-radius: 0 40px 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+
+    .drink {
+      display: flex;
+      justify-content: space-between;
+      color: #1f1c1c;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+}
