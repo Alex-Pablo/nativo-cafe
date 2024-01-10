@@ -1,9 +1,9 @@
-<div class="wrapper-drink" *ngFor="let food of foods" >
+<div class="wrapper-drink" *ngFor="let food of foods"[style.background-color]="food.color" >
     <div class="wrapperFoPr">
         <p class="title">{{ food.title }}</p>
         <p>Q{{food.price}}</p>
     </div>
-    <div class="wrapper-ingredient" [style.background-color]="food.color">
+    <div class="wrapper-ingredient" >
         <p class="ingredient">{{ food.foodIngredient }}</p>
     </div>
   </div>

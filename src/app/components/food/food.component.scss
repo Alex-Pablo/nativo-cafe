@@ -1,30 +1,29 @@
 .wrapper-drink {
     margin-top: 40px;
-
+    padding: 20px;
+    border-radius: 0 40px 10px 0;
     .wrapperFoPr{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 10px ;
-
       p{
         font-size: 1rem;
         color: #221e1e;
         font-family: 'PopinsBold';
-        margin: 5px 0;
+        margin: 0;
       }
       .title {
         font-size: 1.2rem;
       }
     }
     .wrapper-ingredient {
-      border-radius: 0 40px 10px 0;
-      font-family: 'PopinsRegular';
+
+      font-family: 'PopinsMedium';
       font-size: 0.9rem;
       p{
         text-align: justify;
         margin: 0;
-        padding: 20px 17px 20px 10px;
+        padding: 20px;
       }
     }
   }
