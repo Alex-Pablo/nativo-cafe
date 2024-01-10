@@ -1,11 +1,19 @@
 <div class="wrapper">
-    <img class="logo" src="../../../assets/img/logo.png" alt="" />
+  @defer () {
+    <div class="wrapper-logo">
+      <img class="logo" ngSrc="assets/img/logo.png" priority alt="" fill/>
+    </div>
+  }
   
     <div class="wrapper-btns">
-      <a class="bebidas" routerLink="/menu">       <span class="material-symbols-outlined"> coffee </span> Bebidas</a>
-      <a class="comida" routerLink="/menu/brunch">       <span class="material-symbols-outlined"> lunch_dining </span> Brunch</a>
+      <a class="bebidas" routerLink="/menu">
+              @defer () { <img src="../../../assets/img/drink.svg" alt=""> } 
+              Bebidas
+      </a>
+      <a class="comida" routerLink="/menu/brunch">
+               @defer () { <img src="../../../assets/img/food.svg">} 
+               Brunch</a>
     </div>
-  
     <div class="wrapper-svg">
       <svg
         class="svg-cafe"

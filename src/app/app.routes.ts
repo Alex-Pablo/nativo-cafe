@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './view/home/home.component';
-import { MenuComponent } from './view/menu/menu.component';
-import { DrinksComponent } from './components/drinks/drinks.component';
-import { FoodComponent } from './components/food/food.component';
+// import { MenuComponent } from './view/menu/menu.component';
+// import { DrinksComponent } from './components/drinks/drinks.component';
+// import { FoodComponent } from './components/food/food.component';
 
 export const routes: Routes = [
     {
@@ -16,7 +16,7 @@ export const routes: Routes = [
     },
     {
         path:'menu',
-        component:MenuComponent,
+        loadComponent: ()=>import('./view/menu/menu.component').then(c=> c.MenuComponent),
         children:[
             {
                 path:'',
@@ -25,11 +25,11 @@ export const routes: Routes = [
             },
             {
                 path:'bebidas',
-                component: DrinksComponent
+                loadComponent: ()=>import('./components/drinks/drinks.component').then(c=>c.DrinksComponent)
             },
             {
                 path:'brunch',
-                component:FoodComponent
+                loadComponent:()=>import('./components/food/food.component').then(c=>c.FoodComponent)
             }
         ]
     },

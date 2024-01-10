@@ -1,5 +1,5 @@
 import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import {Component } from '@angular/core';
 
 export interface IDrink {
   title:string
@@ -91,4 +91,6 @@ export class DrinksComponent {
       ]
     }
   ]
+
+  
 }
